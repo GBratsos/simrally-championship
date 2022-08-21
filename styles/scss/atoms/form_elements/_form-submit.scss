@@ -1,0 +1,22 @@
+@use '../../_variables' as v;
+
+.form-actions {
+  padding: 0 16px;
+  .form-submit.input {
+    width: auto;
+    height: auto;
+    padding: 12px 16px;
+    border: 1px solid v.$yellow;
+    border-radius: 4px;
+    background: transparent;
+    color: v.$yellow;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      background: v.$yellow;
+      color: v.$white;
+    }
+  }
+
+}

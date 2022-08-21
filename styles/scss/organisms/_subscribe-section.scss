@@ -1,0 +1,166 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+@forward '../atoms/_block-title';
+
+.subscribeBlock {
+    background: v.$yellow;
+
+    .blockSubTitle strong {
+        color: v.$black;
+    }
+}
+
+.subscribeForm {
+    margin: 0 auto;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputWrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inputWrapper:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: #121212;
+}
+
+.emailInput {
+    width: 100%;
+    padding: 14px 16px;
+    display: inline-block;
+    border: 0;
+    background: v.$yellow;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+}
+
+.emailInput::-webkit-input-placeholder { /* Edge */
+  color: #121212;
+  font-style: italic;
+}
+
+.emailInput:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #121212;
+  font-style: italic;
+}
+
+.emailInput::placeholder {
+  color: #121212;
+  text-align: center;
+  font-style: italic;
+}
+
+.submitButton {
+    padding: 13px 43px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background: v.$black;
+    color: v.$yellow;
+    font-size: v.$size-6;
+    font-weight: 700;
+    line-height: 1;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.submitButton:hover,
+.submitButton:focus {
+    border-color: v.$black;
+    background: v.$yellow;
+    color: v.$black;
+}
+
+.submitButton[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+}
+
+.newContent {
+    margin-bottom: 20px;
+    color: v.$black;
+    text-align: center;
+}
+
+// .checkboxWrapper {
+//     max-width: 190px;
+//     margin-bottom: 20px;
+//     padding-left: 53px;
+//     position: relative;
+//     @include b.tablet {
+//         margin-bottom: 30px;
+//     }
+// }
+
+// .formCheckbox {
+//     margin: 0;
+//     cursor: pointer;
+//     opacity: 0;
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     bottom: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 2;
+// }
+
+// .formCheckbox + label {
+//     position: relative;
+//     color: v.$black;
+//     cursor: pointer;
+// }
+
+// .formCheckbox + label:before {
+//     content: "";
+//     width: 30px;
+//     height: 30px;
+//     left: -52px;
+//     position: absolute;
+//     top: 0;
+//     border: 1px solid v.$black;
+//     background: v.$white;
+// }
+
+// .formCheckbox + label:after {
+//     background: transparent;
+//     content: "";
+//     width: 30px;
+//     height: 30px;
+//     left: 0;
+//     position: absolute;
+//     top: 1px;
+// }
+
+// .formCheckbox:checked + label:after {
+//     background: v.$black;
+//     height: 20px;
+//     width: 20px;
+//     left: -47px;
+//     top: 5px;
+// }
+
+.message {
+    margin-top: 25px;
+    text-align: center;
+    font-size: v.$size-8;
+    font-style: italic;
+}
+
+.error .message {
+    color: v.$red;
+}

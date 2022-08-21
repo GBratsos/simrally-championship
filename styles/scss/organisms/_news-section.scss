@@ -1,0 +1,23 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+@forward '../atoms/_block-title';
+@forward '../atoms/_buttons';
+@forward '../molecules/cards/article-with-background';
+
+.newsSection {
+    .blockTitle {
+        margin-bottom: 30px;
+        color: v.$white;
+        @include b.tablet {
+            margin-bottom: 40px;
+        }
+    }   
+
+    .button-wrapper {
+        margin-top: 30px;
+        @include b.tablet {
+            margin-top: 40px;
+        };
+    }
+}

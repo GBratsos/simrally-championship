@@ -1,0 +1,13 @@
+@use '../../_variables' as v;
+
+.textarea.form-textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid v.$white;
+  border-radius: 0;
+  background: transparent;
+  color: v.$white;
+  &:focus, &:hover {
+    border-color: v.$yellow;
+  }
+}
