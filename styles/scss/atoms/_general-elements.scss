@@ -1,0 +1,152 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+.container {
+  &.is-fluid {
+    padding: 0;
+  }
+}
+
+.fixed {
+  position: sticky !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 99 !important;
+  animation: slide-down 0.3s;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+*:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.columns:last-child {
+  margin-bottom: 0;
+}
+
+.columns {
+  @include b.tablet {
+    margin: 0 !important;
+  }
+
+  @include b.touch {
+    margin: 0 !important;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.column {
+  position: relative;
+  padding: 0 16px !important;
+
+  @include b.touch {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.no-padding-mobile {
+  @include b.touch {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.no-padding-left-desktop {
+  padding-left: 0 !important;
+  @include b.touch {
+    padding-left: 16px !important;
+  }
+}
+
+.no-padding-left {
+  padding-left: 0 !important;
+  @include b.touch {
+    padding-left: 0 !important;
+  }
+}
+
+.no-padding-left-mobile {
+  @include b.touch {
+    padding-left: 0 !important;
+  }
+}
+
+.no-padding-right-desktop {
+  padding-right: 0 !important;
+  @include b.touch {
+    padding-right: 16px !important;
+  }
+}
+
+.no-padding-right {
+  padding-right: 0 !important;
+  @include b.touch {
+    padding-right: 0 !important;
+  }
+}
+
+.no-padding-right-mobile {
+  @include b.touch {
+    padding-right: 0 !important;
+  }
+}
+
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  @include b.touch {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.is-used {
+  overflow: hidden;
+}
+
+.is-visible-mobile-only {
+  display: none !important;
+  @include b.touch {
+    display: block !important;
+  }
+}
+
+.ordered-mobile {
+  @include b.touch {
+    display: flex;
+    justify-content: center !important;
+  }
+}
+
+.order-mobile-1 {
+  @include b.touch {
+    order: 1;
+  }
+}
+
+.order-mobile-2 {
+  @include b.touch {
+    order: 2;
+  }
+}
+
+.order-mobile-3 {
+  @include b.touch {
+    order: 3;
+  }
+}

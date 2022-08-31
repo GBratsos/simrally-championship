@@ -1,0 +1,58 @@
+@use '../../_variables' as v;
+
+[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  z-index: 2;
+  + label {
+    cursor: pointer;
+    margin-left: 23px;
+    color: v.$white;
+    font-weight: 500;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -23px;
+      top: 1px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1.5px solid v.$white;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 16px;
+      height: 16px;
+      background: transparent;
+    }
+
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: v.$yellow;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        background: v.$yellow;
+      }
+      &:after {
+        left: -19px;
+        top: 5px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: v.$yellow;
+      }
+    }
+  }
+}
