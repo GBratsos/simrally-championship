@@ -1,0 +1,30 @@
+@use '../../_variables' as v;
+
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: v.$white;
+  opacity: 1;
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: v.$white !important;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: v.$white !important;
+  opacity: 1;
+}
+
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: v.$white !important;
+  opacity: 1;
+}
+
+input::placeholder {
+  color: v.$white !important;
+  opacity: 1;
+}

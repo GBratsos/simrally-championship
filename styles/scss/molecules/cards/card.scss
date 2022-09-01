@@ -1,0 +1,81 @@
+@use '../../_variables' as v;
+@use '../../addons/_bulma' as b;
+
+.card {
+  margin-bottom: 20px;
+  padding: 16px;
+  border-radius: 6px;
+  background: v.$black-light;
+  transition: background .3s ease-in-out;
+  &:hover {
+    background: v.$black-lighter;
+    box-shadow: 1px 1px 5px 4px rgba(v.$yellow, 0.2);
+  }
+
+  img {
+    border-radius: 6px;
+  }
+
+  .article-category {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 15px;
+    display: table;
+    background: v.$yellow;
+
+
+    @include b.mobile {
+      position: static;
+      margin-top: 16px;
+    }
+
+    a {
+      color: v.$black;
+      font-weight: bold;
+      @include b.mobile {
+        font-size: v.$size-9;
+      }
+    }
+  }
+
+  .article-title {
+    @include b.mobile {
+      margin: 0;
+      word-break: break-word;
+      font-size: v.$size-6;
+    }
+    a {
+      color: v.$white;
+      font-size: v.$size-4;
+      @include b.mobile {
+        font-size: v.$size-6;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .content {
+    padding: 15px 0;
+    @include b.mobile {
+      padding-bottom: 0;
+    }
+    p {
+      font-size: v.$size-8;
+      @include b.mobile {
+        display: none;
+      }
+    }
+  }
+}

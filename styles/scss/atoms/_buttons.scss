@@ -1,0 +1,22 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+.button {
+  padding: 13px 43px;
+  border: 2px solid v.$yellow;
+  border-radius: 50px;
+  color: v.$yellow;
+  font-weight: 700;
+  font-size: v.$size-6;
+  font-style: italic;
+  line-height: 1;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  &:hover {
+    text-decoration: none !important;
+    background: v.$yellow;
+    color: v.$white;
+  }
+}

@@ -1,0 +1,40 @@
+@use '../_variables' as v;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: v.$header-font-family;
+}
+
+.content {
+  p, li {
+    font-size: v.$size-8;
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  blockquote {
+    margin: 20px 0;
+    padding: 0;
+    border-top: 1px solid v.$yellow;
+    border-bottom: 1px solid v.$yellow;
+    border-left: 0;
+    p {
+      max-width: 710px;
+      margin: 0 auto;
+      padding: 20px 0;
+      color: v.$white;
+      font-size: v.$size-7;
+      text-align: center;
+      font-style: italic;
+
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
