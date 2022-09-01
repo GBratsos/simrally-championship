@@ -1,4 +1,4 @@
-# RallyDiaries eRally Championship Project
+# RallyDiaries SimRally Championship Project
 
 This is a [Next.js](https://nextjs.org/) project.
 
