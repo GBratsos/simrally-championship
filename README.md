@@ -1,5 +1,2 @@
-# RallyDiaries SimRally Championship Project
-
-This is a [Next.js](https://nextjs.org/) project.
-
-Check the other branches for more code.
+# erally-championship
+RallyDiaries eRally Championship NextJS Website
