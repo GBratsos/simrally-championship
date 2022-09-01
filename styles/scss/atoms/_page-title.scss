@@ -1,0 +1,24 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+.pageTitle {
+  margin-bottom: 16px;
+  font-size: v.$size-5;
+  line-height: 1.3;
+  font-weight: 700;
+  text-align: center;
+  @include b.tablet {
+      font-size: v.$size-3;
+      line-height: 1.3;
+  }
+}
+
+.pageSubTitle,
+.content .pageSubTitle {
+  margin-bottom: 24px;
+  font-size: v.$size-6;
+  line-height: 1.3;
+  @include b.tablet {
+      font-size: v.$size-4;
+  }
+}

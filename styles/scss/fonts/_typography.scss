@@ -1,17 +1,25 @@
 @use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: v.$header-font-family;
 }
 
 .content {
+
   p, li {
-    font-size: v.$size-8;
+    @include b.mobile {
+        font-size: v.$size-7;
+    }
   }
 
   a {
-    &:hover {
-      text-decoration: underline;
+    text-decoration: underline;
+  }
+
+  li {
+    + li {
+      margin-top: 8px;
     }
   }
 

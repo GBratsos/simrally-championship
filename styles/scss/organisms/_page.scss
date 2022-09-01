@@ -7,9 +7,18 @@
 @forward './_video-section';
 @forward './_news-section';
 
+@forward './_championship-information-page';
+
 .section {
     padding: 35px 0;
     @media only screen and (min-width: 769px) {
         padding: 40px 0;
+    }
+}
+
+.page > .container {
+    margin-top: 54px;
+    @media only screen and (min-width: 769px) {
+        margin-top: 96px;
     }
 }

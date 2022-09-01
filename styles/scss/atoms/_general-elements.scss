@@ -37,11 +37,11 @@
 
 .columns {
   @include b.tablet {
-    margin: 0 !important;
+    margin: 0;
   }
 
   @include b.touch {
-    margin: 0 !important;
+    margin: 0;
   }
 
   &:not(:last-child) {

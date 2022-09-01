@@ -1,0 +1,15 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+@forward '../atoms/_page-title';
+
+.columns.zig-zag {
+    margin-top: 40px;
+    @include b.tablet {
+        margin-top: 80px;
+    }
+
+    strong {
+        color: v.$yellow;
+    }
+}
