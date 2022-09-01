@@ -17,7 +17,7 @@ export default function Subscribe() {
                   <span id="mce-EMAIL-HELPERTEXT" className="helper_text"></span>
                 </div>
 
-                <h3 className="has-text-centered blockSubTitle">Sign up here to get the latest news and updates about <strong><i>RallyDiaries SimRally Championship</i></strong> & <strong><i>Bratsos Team</i></strong>.</h3>
+                <h3 className="has-text-centered blockSubTitle">Sign up here to get the latest news and updates about <strong><i>RallyDiaries eRally Championship</i></strong> & <strong><i>Bratsos Team</i></strong>.</h3>
 
                 <div className='newContent'>
                   <p><i>We&apos;ll only send emails when new content is posted. No spam.</i></p>

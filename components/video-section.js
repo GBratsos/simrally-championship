@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 import Image from 'next/image';
 
 const custom = ({ src, width }) => {
-  return `https://simrally.rallydiaries.eu${src}?w=${width}`
+  return `https://erally.rallydiaries.eu${src}?w=${width}`
 }
 
 
@@ -30,20 +30,20 @@ export default function VideoSection() {
                             </div>
                             <div className="video-img dekstopImg">
                                 <Image loader={custom}
-                                        src='/simrally-championship-poster.webp'
-                                        alt="RallyDiaries simrally Championship"
+                                        src='/erally-championship-poster.webp'
+                                        alt="RallyDiaries erally Championship"
                                         height={720} width={1280}
                                         layout="responsive"
                                         priority
                                 />
                             </div>
-                            <video preload='metadata' controls poster='/simrally-championship-poster.webp' width="1280" height="720" className="desktopVid">
-                                <source src="/simrally-championship.mp4?v=1" type='video/mp4'></source>
+                            <video preload='metadata' controls poster='/erally-championship-poster.webp' width="1280" height="720" className="desktopVid">
+                                <source src="/erally-championship.mp4?v=1" type='video/mp4'></source>
                             </video>
                         </div>
                         
                         <div className="img-container is-visible-mobile-only">
-                            <Image loader={custom} src='/simrally-mobile-gif.gif' alt="RallyDiaries simrally Championship" height={300} width={300} layout="responsive" priority />
+                            <Image loader={custom} src='/erally-mobile-gif.gif' alt="RallyDiaries erally Championship" height={300} width={300} layout="responsive" priority />
                         </div>
                     </div>
                 </div>

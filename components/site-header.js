@@ -13,27 +13,27 @@ export default function SiteHeader() {
           }}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
-        <link rel="canonical" href="https://simrally.rallydiaries.eu/"></link>
+        <link rel="canonical" href="https://erally.rallydiaries.eu/"></link>
         <meta name="robots" content="index, follow"></meta>
-        <link rel="shortlink" href="https://simrally.rallydiaries.eu/"></link>
-        <meta name="description" content="Welcome to RallyDiaries simrally Championship by Bratsos Team." />
-        <meta property="og:description" content="Welcome to RallyDiaries simrally Championship by Bratsos Team." />
-        <meta property="og:site_name" content="RallyDiaries simrally Championship"></meta>
-        <meta property="og:url" content="https://simrally.rallydiaries.eu"></meta>
+        <link rel="shortlink" href="https://erally.rallydiaries.eu/"></link>
+        <meta name="description" content="Welcome to RallyDiaries eRally Championship by Bratsos Team." />
+        <meta property="og:description" content="Welcome to RallyDiaries eRally Championship by Bratsos Team." />
+        <meta property="og:site_name" content="RallyDiaries erally Championship"></meta>
+        <meta property="og:url" content="https://erally.rallydiaries.eu"></meta>
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="RallyDiaries simrally Championship"></meta>
+        <meta property="og:title" content="RallyDiaries eRally Championship"></meta>
         <meta property="og:image:type" content="image/webp"></meta>
-        <meta property="og:image" content="https://simrally.rallydiaries.eu/simrally-championship-poster.webp" />
-        <meta property="og:image:alt" content="RallyDiaries simrally Championship"></meta>
+        <meta property="og:image" content="https://erally.rallydiaries.eu/erally-championship-poster.webp" />
+        <meta property="og:image:alt" content="RallyDiaries erally Championship"></meta>
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta name="twitter:site" content="@rallydiaries"></meta>
-        <meta name="twitter:title" content="SimRally Championship | RallyDiaries"></meta>
+        <meta name="twitter:title" content="erally Championship | RallyDiaries"></meta>
         <meta name="twitter:creator" content="@rallydiaries"></meta>
-        <meta name="twitter:image:alt" content="RallyDiaries SimRally Championship"></meta>
+        <meta name="twitter:image:alt" content="RallyDiaries eRally Championship"></meta>
         <meta name="twitter:url" content="/"></meta>
         <meta name="MobileOptimized" content="width"></meta>
         <meta name="HandheldFriendly" content="true"></meta>
-        <title>SimRally Championship | RallyDiaries</title>
+        <title>eRally Championship | RallyDiaries</title>
         <link rel="icon" href="/favicons/favicon.ico" />
         <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png" />
