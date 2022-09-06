@@ -5,8 +5,8 @@
 /.pnp
 .pnp.js
 .env.local
-.package-lock.json
 /static_files
+package-lock.json
 
 # testing
 /coverage
