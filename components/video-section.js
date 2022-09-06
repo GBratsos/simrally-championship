@@ -21,7 +21,7 @@ export default function VideoSection() {
 
     return (
         <section className="videoSection">
-            <div className="container is-fluid">
+            <div className="container">
                 <div className="columns">
                     <div className="column is-12 no-padding">
                         <div className="video-container is-hidden-mobile">

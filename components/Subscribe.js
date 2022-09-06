@@ -1,3 +1,6 @@
+import React, { useState } from "react";
+import axios from "axios";
+
 function Subscribe() {
 
     const [email, setEmail] = useState('')
@@ -10,55 +13,71 @@ function Subscribe() {
   
       try {
         const response = await axios.post('/api/subscribe', { email })
-        console.log(response)
+        //console.log(response)
         setState('Success')
         setEmail('')
       } catch (e) {
-        console.log(e.response.data.error)
+        //console.log(e.response.data.error)
         setErrorMsg(e.response.data.error)
         setState('Error')
       }
     }
   
     return (
-      <SubscribeContainer>
-        <h4 className="sub-header">Subscribe to the newsletter</h4>
-        <p className="sub-text">
-          Get to notified on quality articles about frontend development and more
-          sent to your inbox. I'll send you an email once a month, no spam.
-        </p>
-        <form onSubmit={subscribe}>
-          <SubFormContainer>
-            <div className="form-input">
-              <input
-                required
-                id="email-input"
-                name="email"
-                type="email"
-                placeholder="What's your email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
+      <section className="subscribeBlock section">
+        <div className="container">
+          <div className="columns is-multiline is-justify-content-center">
+            <div className='column is-12'>
+              <h2 className="has-text-centered blockTitle">Subscribe</h2>
             </div>
-            <div className="sub-form-btn">
-              <button
-                disabled={state === 'Loading'}
-                type="submit"
-                className="form-btn"
-                onClick={subscribe}
-              >
-                Subscribe
-              </button>
+            <div className="column is-narrow">
+              <form className="subscribeForm" onSubmit={subscribe}>
+                  <div className="inputWrapper has-text-centered">
+                    <input
+                      required
+                      id="email-input"
+                      className="emailInput"
+                      name="email"
+                      type="email"
+                      placeholder="your email here plz"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                  </div>
+
+                  <h3 className="has-text-centered blockSubTitle">Sign up here to get the latest news and updates about <strong><i>RallyDiaries eRally Championship</i></strong> & <strong><i>Bratsos Team</i></strong>.</h3>
+
+                  <div className='newContent'>
+                    <p><i>We&apos;ll only send emails when new content is posted.<br />No spam.</i></p>
+                  </div>
+
+                  <div className="has-text-centered">
+                    <button
+                      disabled={state === 'Loading'}
+                      type="submit"
+                      className="submitButton"
+                      onClick={subscribe}
+                    >
+                      Let's race!
+                    </button>
+                  </div>
+                {state === 'Error' && (
+                  <div className="error">
+                    <p className="message">{errorMsg}</p>
+                  </div>
+                )}
+                {state === 'Success' && (
+                  <div className="success">
+                    <p className="message">Awesome, you've been subscribed!</p>
+                  </div>
+                )}
+              </form>
             </div>
-          </SubFormContainer>
-          {state === 'Error' && (
-            <ErrorState className="error-state">{errorMsg}</ErrorState>
-          )}
-          {state === 'Success' && (
-            <SuccessState>Awesome, you've been subscribed!</SuccessState>
-          )}
-        </form>
-      </SubscribeContainer>
+          </div>
+          
+        </div>
+        
+      </section>
     )
   }
   

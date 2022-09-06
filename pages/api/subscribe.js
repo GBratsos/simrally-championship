@@ -4,7 +4,7 @@ export default async (req, res) => {
   const { email } = req.body
 
   if (!email || !email.length) {
-    return res.status(400).json({ error: 'Email is required' })
+    return res.status(400).json({ error: 'Email is required.' })
   }
 
   const API_KEY = process.env.MAILCHIMP_API_KEY
@@ -29,12 +29,12 @@ export default async (req, res) => {
     const response = await axios.post(url, data, options)
     if (response.status >= 400) {
       return res.status(400).json({
-        error: `There was an error subscribing to the newsletter. Shoot me an email at ogbonnakell@gmail and I'll add you to the list.`
+        error: `There was an error subscribing to the newsletter. Shoot me an email at contact@erally.rallydiaries.eu and I'll add you to the list.`
       })
     }
     return res.status(201).json({ message: 'success' })
   } catch (error) {
-    console.log(error)
+    //console.log(error)
     return res.status(500).json({ error: error.message })
   }
 }

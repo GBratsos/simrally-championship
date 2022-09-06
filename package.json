@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "predev": "node functions/preBuildScripts/preBuildDev.js",
+    "dev": "next dev",
+    "prebuild": "node functions/preBuildScripts/preBuildDev.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

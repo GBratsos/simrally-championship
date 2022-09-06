@@ -20,9 +20,6 @@
   margin-top: 30px;
   font-size: v.$size-7;
   font-weight: 500;
-  @include b.tablet {
-    margin-top: 40px;
-  }
 }
 
 .footer-bottom {

@@ -4,13 +4,13 @@
 .blockTitle {
   margin-bottom: 16px;
   color: v.$black;
-  font-size: v.$size-5;
+  font-size: v.$size-4;
   line-height: 18px;
   font-weight: 700;
   text-align: center;
   @include b.tablet {
       font-size: v.$size-3;
-      line-height: 45px;
+      line-height: 1.1;
   }
 }
 

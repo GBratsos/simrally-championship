@@ -1,4 +1,4 @@
-export default function NewsSection({postData}) {
+export default function NewsSection() {
     console.log(postData);
     return (
         <section className="newsSection section">
@@ -9,7 +9,7 @@ export default function NewsSection({postData}) {
                 </div>
                 <div className="column is-12 no-padding">
                   <div className="columns is-multiline is-gapless">
-                    {postData.slice(0, 3).map((post, i) => (
+                    {/* {postData.slice(0, 3).map((post, i) => (
                       <div className="column is-4" key={i}>
                         <article className="article-with-background">
                           <div className="img-container">
@@ -58,7 +58,7 @@ export default function NewsSection({postData}) {
                           </section>
                         </article>
                       </div>
-                    ))}
+                    ))} */}
                   </div>
                 </div>
                 <div className="column is-12 has-text-centered button-wrapper">
@@ -68,24 +68,4 @@ export default function NewsSection({postData}) {
         </div>
     </section>
     )
-}
-
-
-export async function getStaticProps() {
-    const res = await fetch('https://rallydiaries.eu/en/rest/articles');
-    // res.setHeader(
-    //     'Cache-Control',
-    //     'public, s-maxage=10, stale-while-revalidate=59'
-    // )
-
-    const postData = await res.json()
-
-    if (!res.ok) {
-        throw new Error(`Failed to fetch posts, received status ${res.status}`)
-    }
-
-    return { props: 
-        { postData },
-        revalidate: 10
-    };
 }
