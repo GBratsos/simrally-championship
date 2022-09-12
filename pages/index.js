@@ -3,6 +3,7 @@ import Link from 'next/link';
 import VideoSection from '../components/video-section'
 import TextSection from '../components/main-text'
 import Subscribe from '../components/Subscribe'
+import ImageTextSection from '../components/image-text-section';
 
 export default function Home({ postData }) {
   return (
@@ -79,6 +80,7 @@ export default function Home({ postData }) {
               </div>
           </div>
       </section>
+      <ImageTextSection />
     </>
   )
 }

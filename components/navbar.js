@@ -16,14 +16,14 @@ export default function Navbar() {
                         />
                     </a>
 
-                    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainnavbar">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     </a>
                 </div>
 
-                <div id="navbarBasicExample" className="navbar-menu">
+                <div id="mainnavbar" className="navbar-menu">
                     <div className="navbar-end">
                         <div className="navbar-item">
                             <Link href="/erally-championship-information">

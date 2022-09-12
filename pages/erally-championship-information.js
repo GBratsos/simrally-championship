@@ -1,3 +1,5 @@
+import DiscordSection from '../components/discord-section';
+import Subscribe from '../components/Subscribe'
 import Image from 'next/image';
 
 export default function Season() {
@@ -35,7 +37,7 @@ export default function Season() {
                     <div className="column is-5">
                         <div className="content">
                         <h2 className="pageSubTitle">ERALLY CHAMPIONSHIP DESCRIPTION</h2>
-                        <p>This is the first time we organise eRally Championship. This version of the championship will start in <strong><i>October</i></strong> and finish <strong><i>10 weeks</i></strong>. It will consist of <strong><i>5 tarmac rallies</i></strong> 1 or 2 legs for each rally.</p>
+                        <p>This is the first time we organise eRally Championship. This version of the championship will start in <strong><i>October</i></strong> and finish in <strong><i>10 weeks</i></strong>. It will consist of <strong><i>5 tarmac rallies</i></strong> 1 or 2 legs for each rally.</p>
                         <p>There will be a general car classification and classification per car class. There will be no group classification.</p>
                         <p>You will find all information about our point system on rally's website at <a href="#" target="_blank" rel="noreferrer">Rallysimfans.hu</a>.</p>
                         </div>
@@ -66,6 +68,8 @@ export default function Season() {
                     </div>
                 </div>
             </div>
+            <DiscordSection />
+            <Subscribe />
         </section>
     )
 }
