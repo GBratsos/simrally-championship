@@ -2,6 +2,7 @@
 @use '../addons/bulma/_bulma-basic' as b;
 
 @forward '../atoms/_page-title';
+@forward '_discord-section';
 
 .columns.zig-zag {
     margin-top: 40px;

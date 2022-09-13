@@ -15,7 +15,7 @@ export default function ImageTextSection() {
     return (
         <section className="imageTextSection image-text-paragraph section">
                 <div className='container'>
-                    <div className='columns is-align-items-center is-justify-content-space-between paragraph img-left'>
+                    <div className='columns is-align-items-center is-justify-content-space-between paragraph img-left' id="partnership">
                         <div className='column is-7 no-padding-mobile'>
                             <div className="img-container">
                                 {/* <picture>

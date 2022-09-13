@@ -4,6 +4,7 @@ import VideoSection from '../components/video-section'
 import TextSection from '../components/main-text'
 import Subscribe from '../components/Subscribe'
 import ImageTextSection from '../components/image-text-section';
+import SeasonResultsSection from '../components/season-results-section'
 
 export default function Home({ postData }) {
   return (
@@ -11,9 +12,7 @@ export default function Home({ postData }) {
       <VideoSection />
       <TextSection />
       <Subscribe />
-      <h1 className="title">
-        <Link href="/seasons">Seasons and events</Link>
-      </h1>
+      <SeasonResultsSection />
       <section className="newsSection section">
           <div className="container">
               <div className="columns is-multiline">
@@ -75,7 +74,7 @@ export default function Home({ postData }) {
                     </div>
                   </div>
                   <div className="column is-12 has-text-centered button-wrapper">
-                      <a href="https://rallydiaries.eu/news" className="button" target="_blank" aria-label="Read more news" rel="noreferrer">Read more news</a>
+                      <a href="https://rallydiaries.eu/en/news" className="button" target="_blank" aria-label="Read more news" rel="noreferrer">Read more news</a>
                   </div>
               </div>
           </div>

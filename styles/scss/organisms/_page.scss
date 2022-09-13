@@ -7,13 +7,15 @@
 @forward './_video-section';
 @forward './_news-section';
 @forward '../molecules/img-text-paragraph';
+@forward './_season-results-section';
 
 @forward './_championship-information-page';
+@forward './_results-page';
 
 .section {
     padding: 35px 0;
     @media only screen and (min-width: 769px) {
-        padding: 40px 0;
+        padding: 60px 0;
     }
 }
 

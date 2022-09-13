@@ -31,19 +31,19 @@ export default function Navbar() {
                             </Link>
                         </div>
                         <div className="navbar-item">
-                            <Link href='/'>
+                            <Link href='/results'>
                                 SEASON RESULTS
                             </Link>
                         </div>
                         <div className="navbar-item">
-                            <Link href="/">
+                            <a href="https://rallydiaries.eu/en/simracing" target="_blank">
                                 NEWS
-                            </Link>
+                            </a>
                         </div>
                         <div className="navbar-item">
-                            <Link href="/">
+                            <a href="https://rallydiaries.eu/en/contact" target="_blank">
                                 CONTACT
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
