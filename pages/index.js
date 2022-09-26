@@ -17,7 +17,7 @@ export default function Home({ postData }) {
           <div className="container">
               <div className="columns is-multiline">
                   <div className="column is-12">
-                      <h3 className="blockTitle has-text-centered">NEWS</h3>
+                      <h3 className="blockTitle has-text-centered">RALLYDIARIES NEWS</h3>
                   </div>
                   <div className="column is-12 no-padding">
                     <div className="columns is-multiline is-gapless">
@@ -34,7 +34,6 @@ export default function Home({ postData }) {
                                           height="370"
                                           src={`https://rallydiaries.eu${post.field_media_image_1}`}
                                           alt={post.title}
-                                          typeof="foaf:Image"
                                     />
                                 </picture>
                             </div>
@@ -59,7 +58,6 @@ export default function Home({ postData }) {
                                         height="370"
                                         src={`https://rallydiaries.eu${post.field_media_image_1}`}
                                         alt={post.title}
-                                        typeof="foaf:Image"
                                   />
                               </picture>
                             </div>

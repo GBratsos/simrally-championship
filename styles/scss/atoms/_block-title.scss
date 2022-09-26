@@ -5,12 +5,11 @@
   margin-bottom: 16px;
   color: v.$black;
   font-size: v.$size-4;
-  line-height: 18px;
+  line-height: 1.3;
   font-weight: 700;
   text-align: center;
   @include b.tablet {
       font-size: v.$size-3;
-      line-height: 1.1;
   }
 }
 

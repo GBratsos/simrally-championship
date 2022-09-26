@@ -1,0 +1,29 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+.page--season-information {
+    .discordSection {
+        margin: 0;
+    }
+}
+
+.seasonInformation {
+    .blockTitle {
+        color: v.$white;
+    }
+}
+
+.seasonStandings {
+    background: v.$yellow;
+}
+
+.result--final {
+    @include b.touch {
+        margin-top: 16px;
+    }
+}
+
+.tba {
+    font-size: v.$size-2;
+    text-align: center;
+}

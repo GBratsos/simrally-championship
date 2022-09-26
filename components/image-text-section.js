@@ -6,8 +6,10 @@ export default function ImageTextSection() {
     useEffect(() => {
         const element = document.querySelector('.image-text-paragraph');
         const observer = new IntersectionObserver(entries => {
-        element.classList.toggle( 'is-inview', entries[0].isIntersecting );
-        });
+            element.classList.toggle( 'is-inview', entries[0].intersectionRatio );
+        },
+        {threshold: 0.5}
+        );
 
         observer.observe( element );
     }, [])
@@ -24,7 +26,7 @@ export default function ImageTextSection() {
                                     <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.jpg?itok=-YqtAGL0 1x" media="(max-width: 500px)" type="image/jpeg">
                                     <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style/public/2021-05/5o-httc-trackday.jpg?itok=LjTw-NQJ 1x" type="image/jpeg">
                                 </picture> */}
-                                <img loading="lazy" width="500" height="333" src="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.jpg?itok=-YqtAGL0" alt="" typeof="foaf:Image" />
+                                <img loading="lazy" width="500" height="333" src="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.jpg?itok=-YqtAGL0" alt="" />
 
                             </div>
                         </div>
@@ -34,7 +36,7 @@ export default function ImageTextSection() {
                                 <h3 className="img-text-title">BECOME OUR <strong>PARTNER</strong> IN <strong>MOTORSPORT</strong> OR <strong>SIMRACING</strong> AND <strong>BENEFIT</strong> YOUR BUSINESS.</h3>
                                 <p>Contact us to discuss how we can help your business grow through motorsport or simracing.</p>
                                 <p className="link">
-                                    <a href="https://rallydiaries.eu/en/contact" target="_blank" className="button">SEND A MESSAGE</a>
+                                    <a href="https://rallydiaries.eu/en/contact" target="_blank" rel="noreferrer" className="button">SEND A MESSAGE</a>
                                 </p>
                             </article>
                         </div>
@@ -44,7 +46,7 @@ export default function ImageTextSection() {
                             <h4 className="img-text-subtitle">CONTACT US</h4>
                             <h3 className="img-text-title">OUR <strong>TEAM</strong> IS HAPPY TO HELP WITH ANYTHING REGARDING OUR eRALLY CHAMPIONSHIP.</h3>
                             <p className="link">
-                                    <a href="https://rallydiaries.eu/en/contact" target="_blank" className="button">CONTACT US</a>
+                                    <a href="https://rallydiaries.eu/en/contact" target="_blank" rel="noreferrer" className="button">CONTACT US</a>
                                 </p>
                         </div>
                         <div className="column order-mobile-1 is-7 no-padding-mobile">
@@ -55,7 +57,7 @@ export default function ImageTextSection() {
                                     <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.jpg?itok=-YqtAGL0 1x" media="(max-width: 500px)" type="image/jpeg">
                                     <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style/public/2021-05/5o-httc-trackday.jpg?itok=LjTw-NQJ 1x" type="image/jpeg">
                                 </picture> */}
-                                <img loading="lazy" width="500" height="333" src="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.jpg?itok=-YqtAGL0" alt="" typeof="foaf:Image" />
+                                <img loading="lazy" width="500" height="333" src="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.jpg?itok=-YqtAGL0" alt="" />
                             </div>
                         </div>
                     </div>

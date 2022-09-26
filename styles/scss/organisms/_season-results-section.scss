@@ -20,6 +20,10 @@
     &:hover {
         border-color: v.$black;
     }
+
+    @include b.touch {
+        padding: 20px 40px;
+    }
 }
 
 .resultTitle {

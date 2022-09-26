@@ -58,7 +58,7 @@ function Subscribe() {
                       className="submitButton"
                       onClick={subscribe}
                     >
-                      Let's race!
+                      Let&apos;s race!
                     </button>
                   </div>
                 {state === 'Error' && (
@@ -68,7 +68,7 @@ function Subscribe() {
                 )}
                 {state === 'Success' && (
                   <div className="success">
-                    <p className="message">Awesome, you've been subscribed!</p>
+                    <p className="message">Awesome, you&apos;ve been subscribed!</p>
                   </div>
                 )}
               </form>
