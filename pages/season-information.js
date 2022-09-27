@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import DiscordSection from "../components/discord-section";
 
 export default function SeasonInformation() {
@@ -25,8 +23,37 @@ export default function SeasonInformation() {
                         <div className="columns is-justify-content-center">
                             <div className="column is-8 has-text-centered">
                                 <h2 className="blockTitle">SEASON CALENDAR</h2>
-                                <div className="content">
-                                    <p className="tba">TBA</p>
+                            </div>
+                        </div>
+                        <div className="columns is-multiline is-justify-content-center">
+                            <div className="column is-5">
+                                <div className="rally">
+                                    <h3 className="rally-title">RallyDiaries eRally Championship Round 1</h3>
+                                    <p className="rally-date">3 - 9 October 2022</p>
+                                </div>
+                            </div>
+                            <div className="column is-5">
+                                <div className="rally">
+                                    <h3 className="rally-title">RallyDiaries eRally Championship Round 2</h3>
+                                    <p className="rally-date">17 - 23 October 2022</p>
+                                </div>
+                            </div>
+                            <div className="column is-5">
+                                <div className="rally">
+                                    <h3 className="rally-title">RallyDiaries eRally Championship Round 3</h3>
+                                    <p className="rally-date">31 - 06 November 2022</p>
+                                </div>
+                            </div>
+                            <div className="column is-5">
+                                <div className="rally">
+                                    <h3 className="rally-title">RallyDiaries eRally Championship Round 4</h3>
+                                    <p className="rally-date">14 - 20 November 2022</p>
+                                </div>
+                            </div>
+                            <div className="column is-5">
+                                <div className="rally">
+                                    <h3 className="rally-title">RallyDiaries eRally Championship Round 5</h3>
+                                    <p className="rally-date">28 - 04 December 2022</p>
                                 </div>
                             </div>
                         </div>
@@ -41,7 +68,7 @@ export default function SeasonInformation() {
                             <div className="result">
                                 <svg width="295" height="218" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.31 50.509H51.7V17.005H35.03v5.052h11.619v28.452h-11.62v5.052h28.28v-5.052Z" fill="#231F20"/><path d="M295 75.081V70.03H100.866V0h-5.052v70.03H0v5.051h95.814v67.504H0v5.051h95.814v70.03h5.052v-70.03H295v-5.051H100.866V75.081H295Z" fill="#231F20"/><path d="M35 112.829v15.287h28.31v-5.052H40.051v-7.052l23.25-11.175V89.56H35v13.691h5.051v-8.64h18.197v7.053L35 112.829ZM35.02 175.805h5.052v-8.638H58.27v6.84l-11.62 4.041v6.679l11.62 4.042v6.85H40.072v-8.639H35.02v13.691h28.3v-15.489l-10.89-3.789 10.89-3.789v-15.489h-28.3v13.69Z" fill="#231F20"/></svg>
                                 <h3 className="resultTitle">
-                                    <a href="https://www.rallysimfans.hu/rbr/bajnoksag2.php?b=reszletek_min&bajnoksag_id=200&ponttabla">SEASON STANDINGS</a>
+                                    <a href="https://www.rallysimfans.hu/rbr/bajnoksag2.php?b=reszletek_min&bajnoksag_id=200&rally_lista">SEASON STANDINGS</a>
                                 </h3>
                             </div>
                         </div>

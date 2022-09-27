@@ -27,3 +27,19 @@
     font-size: v.$size-2;
     text-align: center;
 }
+
+.rally {
+    margin-top: 48px;
+    padding-bottom: 32px;
+    text-align: center;
+    border-bottom: 1px solid v.$white;
+}
+
+.rally-title {
+    font-size: v.$size-4;
+    font-weight: bold;
+}
+
+.rally-date {
+    font-style: italic;
+}

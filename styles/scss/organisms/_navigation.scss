@@ -12,7 +12,7 @@ header {
 }
 
 .navbar {
-  padding: 8px 0;
+  padding: 20px 0;
   position: sticky;
   z-index: 102;
   top: 0;
@@ -52,14 +52,11 @@ header {
   justify-content: center;
   align-items: center;
 
-  a.navbar-item {
-    margin: 0 !important;
-    padding-left: 0;
-    img {
-      max-height: initial;
-      @include b.touch {
-        width: 150px;
-      }
+  img {
+    max-height: initial;
+    cursor: pointer;
+    @include b.touch {
+      width: 150px;
     }
   }
 }
@@ -84,8 +81,8 @@ header {
   height: 100vh;
   text-align: center;
   .navbar-brand {
-    .navbar-item {
-      display: none;
+    img {
+      display: none !important;
     }
   }
 

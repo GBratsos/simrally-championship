@@ -82,7 +82,7 @@ export default function Home({ postData }) {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch('https://rallydiaries.eu/en/rest/articles');
   const postData = await res.json()
 
@@ -91,7 +91,6 @@ export async function getStaticProps() {
   }
 
   return { props: 
-    { postData },
-    revalidate: 10
+    { postData }
   };
 }

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Image from 'next/image';
 
 
 export default function ImageTextSection() {
@@ -17,17 +18,15 @@ export default function ImageTextSection() {
     return (
         <section className="imageTextSection image-text-paragraph section">
                 <div className='container'>
-                    <div className='columns is-align-items-center is-justify-content-space-between paragraph img-left' id="partnership">
-                        <div className='column is-7 no-padding-mobile'>
+                    <div className='columns is-align-items-center is-justify-content-space-around paragraph img-left' id="partnership">
+                        <div className='column is-narrow no-padding-mobile'>
                             <div className="img-container">
-                                {/* <picture>
-                                    <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.webp?itok=-YqtAGL0 1x" media="(max-width: 500px)" type="image/webp">
-                                    <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style/public/2021-05/5o-httc-trackday.webp?itok=LjTw-NQJ 1x" type="image/webp">
-                                    <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.jpg?itok=-YqtAGL0 1x" media="(max-width: 500px)" type="image/jpeg">
-                                    <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style/public/2021-05/5o-httc-trackday.jpg?itok=LjTw-NQJ 1x" type="image/jpeg">
-                                </picture> */}
-                                <img loading="lazy" width="500" height="333" src="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.jpg?itok=-YqtAGL0" alt="" />
-
+                                <Image
+                                    src='/rallydiaries-partner.jpg'
+                                    alt="Become RallyDiaries Partner"
+                                    height={376} width={562}
+                                    priority
+                                />
                             </div>
                         </div>
                         <div className="column is-5 text-side">
@@ -41,23 +40,22 @@ export default function ImageTextSection() {
                             </article>
                         </div>
                     </div>
-                    <div className="columns ordered-mobile is-align-items-center is-justify-content-space-between paragraph img-right">
+                    <div className="columns ordered-mobile is-align-items-center is-justify-content-space-around paragraph img-right">
                         <div className="column order-mobile-2 is-5 text-side">
                             <h4 className="img-text-subtitle">CONTACT US</h4>
                             <h3 className="img-text-title">OUR <strong>TEAM</strong> IS HAPPY TO HELP WITH ANYTHING REGARDING OUR eRALLY CHAMPIONSHIP.</h3>
                             <p className="link">
-                                    <a href="https://rallydiaries.eu/en/contact" target="_blank" rel="noreferrer" className="button">CONTACT US</a>
+                                    <a href="https://rallydiaries.eu/en/contact-us" target="_blank" rel="noreferrer" className="button">CONTACT US</a>
                                 </p>
                         </div>
-                        <div className="column order-mobile-1 is-7 no-padding-mobile">
+                        <div className="column order-mobile-1 is-narrow no-padding-mobile">
                             <div className="img-container">
-                                {/* <picture>
-                                    <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.webp?itok=-YqtAGL0 1x" media="(max-width: 500px)" type="image/webp">
-                                    <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style/public/2021-05/5o-httc-trackday.webp?itok=LjTw-NQJ 1x" type="image/webp">
-                                    <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.jpg?itok=-YqtAGL0 1x" media="(max-width: 500px)" type="image/jpeg">
-                                    <source srcset="https://rallydiaries.eu/sites/default/files/styles/image_text_style/public/2021-05/5o-httc-trackday.jpg?itok=LjTw-NQJ 1x" type="image/jpeg">
-                                </picture> */}
-                                <img loading="lazy" width="500" height="333" src="https://rallydiaries.eu/sites/default/files/styles/image_text_style_mobile/public/2021-05/5o-httc-trackday.jpg?itok=-YqtAGL0" alt="" />
+                                <Image
+                                    src='/erally-championship-contact.jpg'
+                                    alt="Become RallyDiaries Partner"
+                                    height={376} width={562}
+                                    priority
+                                />
                             </div>
                         </div>
                     </div>
