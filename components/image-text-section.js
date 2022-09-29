@@ -35,7 +35,7 @@ export default function ImageTextSection() {
                                 <h3 className="img-text-title">BECOME OUR <strong>PARTNER</strong> IN <strong>MOTORSPORT</strong> OR <strong>SIMRACING</strong> AND <strong>BENEFIT</strong> YOUR BUSINESS.</h3>
                                 <p>Contact us to discuss how we can help your business grow through motorsport or simracing.</p>
                                 <p className="link">
-                                    <a href="https://rallydiaries.eu/en/contact" target="_blank" rel="noreferrer" className="button">SEND A MESSAGE</a>
+                                    <a href="https://rallydiaries.eu/en/contact-us" target="_blank" rel="noreferrer" className="button">SEND A MESSAGE</a>
                                 </p>
                             </article>
                         </div>
