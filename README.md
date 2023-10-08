@@ -1,2 +1,2 @@
-# simrally-championship
-RallyDiaries eRally Championship
+# eRally Championship
+RallyDiaries eRally Championship NextJS Website
