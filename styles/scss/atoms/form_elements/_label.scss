@@ -1,0 +1,11 @@
+@use '../../_variables' as v;
+
+label, .label:not(.option) {
+  display: inline-block;
+  margin-left: 0;
+  margin-bottom: 5px;
+  position: relative;
+  color: v.$white;
+  font-size: v.$size-7;
+  font-weight: 500;
+}

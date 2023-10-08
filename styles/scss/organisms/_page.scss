@@ -1,0 +1,15 @@
+@use '../addons/bulma/_bulma-essentials';
+
+@forward './_header';
+@forward './_footer';
+@forward './_subscribe-section';
+@forward './_text-section';
+@forward './_video-section';
+@forward './_news-section';
+
+.section {
+    padding: 35px 0;
+    @media only screen and (min-width: 769px) {
+        padding: 40px 0;
+    }
+}

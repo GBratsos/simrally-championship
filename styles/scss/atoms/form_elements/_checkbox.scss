@@ -1,0 +1,67 @@
+@use '../../_variables' as v;
+
+.checkbox-wrapper {
+  margin: 0;
+
+  .error {
+    padding-left: 0;
+  }
+}
+
+[type="checkbox"].form-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  z-index: 2;
+  + label {
+    cursor: pointer;
+    margin-left: 32px;
+    color: v.$white;
+    font-weight: 500;
+    font-size: v.$size-8;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -32px;
+      top: 1px;
+      width: 16px;
+      height: 16px;
+      border: 1.5px solid v.$white;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 16px;
+      height: 16px;
+      background: transparent;
+    }
+
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: v.$yellow;
+      }
+    }
+  }
+  &:checked {
+    + label {
+      &:before {
+        background: v.$yellow;
+      }
+      &:after {
+        left: -26px;
+        top: 3px;
+        width: 5px;
+        height: 10px;
+        border: solid v.$black;
+        border-width: 0 1.5px 1.5px 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

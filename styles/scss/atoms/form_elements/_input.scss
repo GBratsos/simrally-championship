@@ -1,0 +1,43 @@
+@use '../../_variables' as v;
+
+input {
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="email"],
+  &[type="file"],
+  &[type="password"],
+  &[type="number"] {
+    width: 100%;
+    height: 48px;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0 16px;
+    border: 1px solid v.$white;
+    color: v.$white;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    line-height: 1;
+    appearance: none;
+    &:focus, &:hover {
+      border-color: v.$yellow;
+    }
+  }
+
+  &[type="file"] {
+    padding-left: 0;
+    border-color: transparent;
+    height: auto;
+  }
+
+  &[type="date"] {
+    margin-bottom: 0;
+  }
+
+  &[disabled] {
+    + label {
+      opacity: 0.2;
+    }
+  }
+}

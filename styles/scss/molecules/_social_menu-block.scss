@@ -1,0 +1,50 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+@forward '../atoms/_lists';
+
+.social-media-menu {
+  justify-content: center;
+  li {
+    margin-left: 0;
+  }
+  a {
+    font-size: v.$size-7;
+    .name {
+      display: none;
+    }
+
+    @include b.mobile {
+      font-size: 11px;
+    }
+
+    .fa-stack {
+      .svg-inline--fa {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        color: v.$black;
+        z-index: 2;
+      }
+      .fa-circle {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        color: transparent;
+      }
+    }
+
+    &:hover {
+      .fa-stack {
+        .svg-inline--fa {
+          color: v.$yellow;
+        }
+        .fa-circle {
+          color: v.$black;
+        }
+      }
+    }
+  }
+}
