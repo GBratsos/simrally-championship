@@ -1,0 +1,53 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+@forward '../molecules/_social_menu-block';
+
+.footer-top {
+  padding: 30px 0;
+  background: v.$yellow;
+  @include b.tablet {
+    padding: 40px 0;
+  }
+
+  .blockTitle {
+    color: v.$black;
+  }
+}
+
+.footerSubTitle {
+  color: v.$black;
+  margin-top: 30px;
+  font-size: v.$size-7;
+  font-weight: 500;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  
+  .svg-inline--fa {
+    color: v.$red;
+  }
+
+  p, a {
+    font-size: v.$size-10;
+    font-weight: 400;
+    text-align: center;
+    @include b.tablet {
+      font-size: v.$size-8;
+    }
+
+    &.made-with {
+      @include b.mobile {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  a {
+    color: v.$white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

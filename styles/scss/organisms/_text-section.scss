@@ -1,0 +1,42 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+
+.textSection {
+    .blockTitle {
+        color: v.$white;
+    }
+}
+
+.textSection_subTitle {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: v.$size-7;
+    line-height: 20.7px;
+    font-style: italic;
+    text-align: center;
+    @include b.tablet {
+        margin-top: 30px;
+        font-size: v.$size-5;
+        line-height: 27.6px;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        margin: 25px auto 0;
+        width: 100px;
+        height: 2px;
+        background: v.$white;
+        @include b.tablet {
+            margin-top: 30px;
+        }
+    }
+}
+
+.textSection_text {
+    margin-top: 25px;
+    @include b.tablet {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,28 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+.discordSection {
+    margin-top: 35px;
+    @include b.tablet {
+        margin-top: 60px;
+    }
+    background-color: v.$grey;
+
+    p {
+        margin: 24px 0;
+        color: v.$black;
+    }
+
+    .button {
+        border-color: v.$black;
+        color: v.$black;
+        &:hover {
+            background: v.$black;
+            color: v.$grey;
+        }
+    }
+}
+
+.discordSectionTitle {
+    color: v.$black;
+}

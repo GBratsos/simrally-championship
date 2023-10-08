@@ -1,0 +1,225 @@
+// Colors
+$black-lighter: #282828 !default
+$black-light:  #181818 !default
+$black:        #121212 !default
+$black-bis:    #000000 !default
+//$black-ter:    hsl(0, 0%, 14%) !default
+
+//$grey-darker:  hsl(0, 0%, 21%) !default
+//$grey-dark:    #828282 !default
+$grey:         #e9e9e9 !default
+$grey-light:   #fefefe !default
+//$grey-lighter: #d8d8d8 !default
+//$grey-lightest: hsl(0, 0%, 93%) !default
+
+//$white-ter:    hsl(0, 0%, 96%) !default
+//$white-bis:    hsl(0, 0%, 98%) !default
+$white:        hsl(0, 0%, 100%) !default
+
+$yellow:       #f9ca00 !default
+$green:        #1fc142 !default
+//$turquoise:    hsl(171, 100%, 41%) !default
+//$cyan:         #1ccfc9 !default
+$blue:           #007fff !default
+
+//$purple:       hsl(271, 100%, 71%) !default
+$red:          #E91D24 !default
+$orange:       #f48507 !default
+
+$primary: $green !default
+$info: $blue !default
+$success: $green !default
+$warning: $yellow !default
+$danger: $red !default
+
+$light: $white !default
+$dark: $black !default
+
+// General colors
+$background: $dark !default
+$border: $yellow !default
+$border-hover: $yellow !default
+
+// Text colors
+$text: $light !default
+$text-light: $light !default
+$text-strong: $light !default
+
+// Link colors
+$link: $yellow !default
+$link-visited: $yellow !default
+
+$link-hover: $yellow !default
+$link-hover-border: $yellow !default
+
+$link-focus: $yellow !default
+$link-focus-border: $yellow !default
+
+$link-active: $yellow !default
+$link-active-border: $yellow !default
+
+// Typography
+$family-sans-serif: 'Arimo', sans-serif !default
+$body-font-family: $family-sans-serif !default
+$header-font-family: 'Arimo', sans-serif !default
+
+$size-1: 4.375rem !default // 70px
+$size-2: 3.8125rem !default // 61px
+$size-3: 3.125rem !default // 50px
+$size-4: 1.75rem !default // 28px
+$size-5: 1.5625rem !default // 25px
+$size-6: 1.25rem !default // 20px
+$size-7: 1.125rem !default // 18px
+$size-8: 1rem !default // 16px
+$size-9: 0.875rem !default // 14px
+$size-10: 0.8125rem !default // 13px
+$size-11: 0.75rem !default // 12px
+
+$size-small: $size-11 !default
+$size-normal: 16px !default
+$size-medium: $size-7 !default
+$size-large: $size-3 !default
+
+$weight-light: 300 !default
+$weight-normal: 400 !default
+$weight-medium: 500 !default
+$weight-semibold: 600 !default
+$weight-bold: 700 !default
+
+$body-background-color: $dark !default
+$body-size: $size-normal !default
+
+$body-color: $text !default
+$body-font-size: $size-7 !default
+$body-weight: $weight-normal !default
+$body-line-height: 1.4 !default
+
+$small-font-size: $size-7 !default
+
+$hr-background-color: $grey !default
+$hr-height: 3px !default
+$hr-margin: 32px 0 !default
+
+// Responsiveness
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 32px !default
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 1026px !default
+// 960px container + 4rem
+$desktop: 1280px + (2 * $gap) !default
+// 1152px container + 4rem
+$widescreen: 1280px + (2 * $gap) !default
+$widescreen-enabled: true !default
+// 1344px container + 4rem
+$fullhd: 1280px + (2 * $gap) !default
+$fullhd-enabled: true !default
+
+// Miscellaneous
+$radius-small: 2px !default
+$radius: 4px !default
+$radius-large: 6px !default
+
+// Buttons
+$button-color: $yellow !default
+$button-background-color: transparent !default
+
+$button-border-color: $yellow !default
+$button-border-width: 1px !default
+
+$button-padding-vertical: calc(1rem - #{$button-border-width}) !default
+$button-padding-horizontal: 10px !default
+
+$button-hover-color: $white !default
+$button-hover-border-color: $yellow !default
+
+$button-focus-color: $white !default
+$button-focus-border-color: $yellow !default
+$button-focus-box-shadow-size: none !default
+$button-focus-box-shadow-color: transparent !default
+
+$button-active-color: $button-color !default
+$button-active-border-color: $button-color !default
+
+$button-disabled-background-color: $grey-light !default
+$button-disabled-border-color: $grey-light !default
+$button-disabled-shadow: none !default
+$button-disabled-opacity: 1 !default
+
+$button-static-color: $grey !default
+$button-static-background-color: $white !default
+$button-static-border-color: $grey !default
+
+// Dropdown
+$dropdown-menu-min-width: 12rem !default
+
+$dropdown-content-background-color: $white !default
+$dropdown-content-arrow: $link !default
+$dropdown-content-offset: 4px !default
+$dropdown-content-padding-bottom: 0 !default
+$dropdown-content-padding-top: 0 !default
+$dropdown-content-radius: $radius !default
+$dropdown-content-shadow: 0 7.5px 30px -7px rgba(56, 163, 165, 0.41) !default
+$dropdown-content-z: 1010 !default
+
+$dropdown-item-color: $white !default
+$dropdown-item-hover-color: $link-hover !default
+$dropdown-item-hover-background-color: $background !default
+$dropdown-item-active-color: $link !default
+$dropdown-item-active-background-color: $link !default
+
+$dropdown-divider-background-color: $border !default
+
+$navbar-background-color: $black !default
+$navbar-box-shadow-size: 0 2px 0 0 !default
+$navbar-box-shadow-color: $black !default
+$navbar-height: 3.5rem !default
+$navbar-padding-vertical: 1rem !default
+$navbar-padding-horizontal: 2rem !default
+$navbar-z: 30 !default
+$navbar-fixed-z: 30 !default
+
+$navbar-item-color: $white !default
+$navbar-item-hover-color: $yellow !default
+$navbar-item-hover-background-color: transparent !default
+$navbar-item-active-color: $yellow !default
+$navbar-item-active-background-color: transparent !default
+$navbar-item-img-max-height: 4rem !default
+
+$navbar-burger-color: $navbar-item-color !default
+
+$navbar-tab-hover-background-color: transparent !default
+$navbar-tab-hover-border-bottom-color: $link !default
+$navbar-tab-active-color: $link !default
+$navbar-tab-active-background-color: transparent !default
+$navbar-tab-active-border-bottom-color: $link !default
+$navbar-tab-active-border-bottom-style: solid !default
+$navbar-tab-active-border-bottom-width: 3px !default
+
+$navbar-dropdown-background-color: $white !default
+$navbar-dropdown-border-top: 2px solid $white !default
+$navbar-dropdown-offset: -4px !default
+$navbar-dropdown-arrow: $link !default
+$navbar-dropdown-radius: $radius-large !default
+$navbar-dropdown-z: 20 !default
+
+$navbar-dropdown-boxed-radius: $radius-large !default
+
+$navbar-dropdown-item-hover-color: $white !default
+$navbar-dropdown-item-hover-background-color: transparent !default
+$navbar-dropdown-item-active-color: $link !default
+$navbar-dropdown-item-active-background-color: $background !default
+
+$navbar-divider-background-color: $background !default
+$navbar-divider-height: 2px !default
+
+$navbar-bottom-box-shadow-size: 0 -2px 0 0 !default
+
+$navbar-breakpoint: $desktop !default
+
+$textarea-padding: 10px !default
+$textarea-max-height: 40em !default
+$textarea-min-height: 8em !default
+
+$input-shadow: none !default
+$input-hover-color: transparent !default
+$input-disabled-color: transparent !default

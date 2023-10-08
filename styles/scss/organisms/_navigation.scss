@@ -1,0 +1,116 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+@forward '../addons/bulma/_bulma-navigation';
+
+@forward '../atoms/_navbar-burger';
+
+header {
+  &.fixed {
+    box-shadow: 0px -12px 20px 0px rgba(v.$yellow, 100%);
+  }
+}
+
+.navbar {
+  padding: 20px 0;
+  position: sticky;
+  z-index: 102;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  background-color: v.$black;
+  box-shadow: 0 5px 30px 0 rgba(v.$black, 0.1);
+
+  .container {
+    padding: 0 16px;
+  }
+}
+
+.navbar-end {
+  margin: 0 auto;
+}
+
+.navbar-item {
+  @include b.touch {
+    margin-top: 47px;
+    color: v.$black;
+    text-align: center;
+  }
+  a {
+    color: v.$white;
+    font-size: v.$size-8;
+    letter-spacing: 0.8px;
+    &:hover, &.is-active  {
+      color: v.$yellow;
+    }
+  }
+}
+
+.navbar-brand {
+  margin: 0 !important;
+  z-index: 102;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-height: initial;
+    cursor: pointer;
+    @include b.touch {
+      width: 150px;
+    }
+  }
+}
+
+.navbar-menu {
+  @media only screen and (max-width: 1200px) {
+    background-color: v.$black;
+    &.is-active {
+      .container {
+        padding: 0;
+        .column {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.is-opened {
+  background: v.$yellow;
+  border: 10px solid v.$black;
+  height: 100vh;
+  text-align: center;
+  .navbar-brand {
+    img {
+      display: none !important;
+    }
+  }
+
+  .navbar-burger {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    span {
+      background: v.$black;
+    }
+  }
+
+  .navbar-menu {
+    &.is-active {
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .navbar-item {
+    a {
+      width: 50%;
+      display: inline-block;
+      color: v.$black;
+      font-weight: 700;
+      font-size: v.$size-7;
+      line-height: 1.3;
+    }
+  }
+}

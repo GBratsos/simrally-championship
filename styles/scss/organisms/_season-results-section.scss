@@ -1,0 +1,50 @@
+@use '../_variables' as v;
+@use '../addons/bulma/_bulma-basic' as b;
+
+.seasonResultsSection {
+    background-color: v.$grey;
+
+    .blockTitle {
+        margin-bottom: 50px;
+    }
+}
+
+.result {
+    position: relative;
+    padding: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: v.$yellow;
+    border: 15px solid transparent;
+    &:hover {
+        border-color: v.$black;
+    }
+
+    @include b.touch {
+        padding: 20px 40px;
+    }
+}
+
+.resultTitle {
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid v.$black;
+    text-align: center;
+    
+    a {
+        color: v.$black;
+        font-weight: 700;
+        font-size: v.$size-7;
+        line-height: 21px;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+}
