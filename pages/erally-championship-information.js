@@ -53,7 +53,7 @@ export default function Season() {
                             <h2 className="pageSubTitle">ERALLY CHAMPIONSHIP SEASONS</h2>
                             <p>RallyDiaries eRally Championship seasons, consist of <strong><i>5 rallies</i></strong> with 1 or 2 legs for each rally.</p>
                             <p>There will be general and class classifications. There will be no group classification.</p>
-                            <p>You will find all information about our current season on championship&apos;s website at <a href="https://www.rallysimfans.hu/rbr/bajnoksag2.php?b=reszletek_min&bajnoksag_id=227" target="_blank" rel="noreferrer">Rallysimfans.hu</a>.</p>
+                            <p>You will find all information about our current season on championship&apos;s website at <a href="https://www.rallysimfans.hu/rbr/bajnoksag2.php?b=reszletek&bajnoksag_id=258" target="_blank" rel="noreferrer">Rallysimfans.hu</a>.</p>
                         </div>
                     </div>
                 </div>
