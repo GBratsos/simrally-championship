@@ -19,7 +19,7 @@ export default function ImageTextSection() {
         <section className="imageTextSection image-text-paragraph section">
                 <div className='container'>
                     <div className='columns is-align-items-center is-justify-content-space-around paragraph img-left' id="partnership">
-                        <div className='column is-narrow no-padding-mobile'>
+                        <div className='column is-5 no-padding-mobile'>
                             <div className="img-container">
                                 <Image
                                     src='/rallydiaries-partner.jpg'
@@ -48,7 +48,7 @@ export default function ImageTextSection() {
                                     <a href="https://rallydiaries.eu/en/contact-us" target="_blank" rel="noreferrer" className="button">CONTACT US</a>
                                 </p>
                         </div>
-                        <div className="column order-mobile-1 is-narrow no-padding-mobile">
+                        <div className="column order-mobile-1 is-5 no-padding-mobile">
                             <div className="img-container">
                                 <Image
                                     src='/erally-championship-contact.jpg'
