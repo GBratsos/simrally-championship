@@ -25,7 +25,7 @@ export default function ImageTextSection() {
                                     src='/rallydiaries-partner.jpg'
                                     alt="Become RallyDiaries Partner"
                                     height={376} width={562}
-                                    priority
+                                    loading='lazy'
                                 />
                             </div>
                         </div>
@@ -54,7 +54,7 @@ export default function ImageTextSection() {
                                     src='/erally-championship-contact.jpg'
                                     alt="Become RallyDiaries Partner"
                                     height={376} width={562}
-                                    priority
+                                    loading='lazy'
                                 />
                             </div>
                         </div>

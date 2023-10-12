@@ -29,8 +29,7 @@ export default function Navbar() {
                             src='/logo.svg'
                             alt="RallyDiaries eRally Championship"
                             height={62} width={136}
-                            layout="fixed"
-                            priority
+                            loading='eager'
                         />
                     </Link>
 

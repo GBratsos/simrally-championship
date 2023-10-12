@@ -28,7 +28,8 @@ export default function VideoSection() {
                         </div>
                         
                         <div className="img-container is-visible-mobile-only">
-                            <Image src='/erally-mobile-gif.gif' alt="RallyDiaries eRally Championship" height={300} width={300} layout="responsive" priority />
+                            <Image src='/erally-mobile-gif.gif' alt="RallyDiaries eRally Championship" height={300} width={300}
+                            loading='lazy' />
                         </div>
                     </div>
                 </div>

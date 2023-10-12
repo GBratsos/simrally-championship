@@ -43,8 +43,7 @@ export default function Season() {
                             src='/erally-championship-seasons.jpg'
                             alt="RallyDiaries eRally Championship Seasons"
                             height={509} width={760}
-                            layout="responsive"
-                            priority
+                            loading='lazy'
                         />
                     </div>
                     </div>
@@ -80,8 +79,7 @@ export default function Season() {
                             src='/erally-championship-rules.jpg'
                             alt="RallyDiaries eRally Championship Rules"
                             height={509} width={760}
-                            layout="responsive"
-                            priority
+                            loading='lazy'
                         />
                     </div>
                     </div>
@@ -93,8 +91,7 @@ export default function Season() {
                                 src='/erally-championship-promo.jpg'
                                 alt="RallyDiaries eRally Championship Social Media Promo"
                                 height={509} width={760}
-                                layout="responsive"
-                                priority
+                                loading='lazy'
                             />
                         </div>
                     </div>
