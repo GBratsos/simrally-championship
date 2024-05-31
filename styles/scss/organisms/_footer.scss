@@ -23,7 +23,9 @@
 }
 
 .footer-bottom {
+  position: relative;
   padding: 20px 0;
+  background-color: v.$black;
   
   .svg-inline--fa {
     color: v.$red;

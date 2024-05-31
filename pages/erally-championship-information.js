@@ -27,7 +27,7 @@ export default function Season() {
                                 <p>Welcome to RallyDiaries eRally Championship.</p>
                                 <p>This championship is all about having fun & driving our favorite cars on the challenging simulator of Richard Burns Rally.<br />
                                 Our purpose is to deliver the atmosphere and challenge of real rallies, to our drivers.</p>
-                                <p>The main idea behind our championship is to have small seasons of 5 weekly rallies, every two weeks.<br />
+                                <p>The main idea behind our championship is to have small seasons of 5 rallies.<br />
                                 Our roadbooks will consist of wide variety of car classes for our drivers to use.<br />
                                 Our goal is for drivers is to have fun and finish our rallies.</p>
                             </div>
@@ -52,7 +52,7 @@ export default function Season() {
                             <h2 className="pageSubTitle">ERALLY CHAMPIONSHIP SEASONS</h2>
                             <p>RallyDiaries eRally Championship seasons, consist of <strong><i>5 rallies</i></strong> with 1 or 2 legs for each rally.</p>
                             <p>There will be general and class classifications. There will be no group classification.</p>
-                            <p>You will find all information about our current season on championship&apos;s website at <a href="https://www.rallysimfans.hu/rbr/bajnoksag2.php?b=reszletek&bajnoksag_id=258" target="_blank" rel="noreferrer">Rallysimfans.hu</a>.</p>
+                            <p>You will find all information about our current season on championship&apos;s website at <a href="https://www.rallysimfans.hu/rbr/bajnoksag2.php?b=reszletek&bajnoksag_id=293" target="_blank" rel="noreferrer">Rallysimfans.hu</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@ export default function Season() {
                         <div className="content">
                             <h2 className="pageSubTitle">ERALLY CHAMPIONSHIP DRIVER&apos;S PROMO</h2>
                             <p>We love to share our work with the world of social media. We also love the work of <a href="https://www.rallysimfans.hu/" target="_blank" rel="noreferrer">Rallysimfans.hu</a> community.</p>
-                            <p>In order to help the community to grow we encourage our drivers to share your <strong>photos</strong> or <strong>videos</strong> from our rallies on <i>Instagram / Facebook / TikTok / Twitter</i> and use the hashtags <strong>#rallydiarieseRally</strong> & <strong>#rallysimfans</strong>.</p>
+                            <p>In order to help the community to grow we encourage our drivers to share your <strong>photos</strong> or <strong>videos</strong> from our rallies on <i>Instagram / Facebook</i> and use the hashtags <strong>#rallydiarieseRally</strong> & <strong>#rallysimfans</strong>.</p>
                         </div>
                     </div>
                 </div>

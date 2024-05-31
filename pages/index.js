@@ -1,6 +1,5 @@
 import VideoSection from '../components/video-section'
 import TextSection from '../components/main-text'
-import Subscribe from '../components/Subscribe'
 import ImageTextSection from '../components/image-text-section';
 import SeasonResultsSection from '../components/season-results-section'
 
@@ -9,7 +8,6 @@ export default function Home({ postData }) {
     <>
       <VideoSection />
       <TextSection />
-      <Subscribe />
       <SeasonResultsSection />
       <section className="newsSection section">
           <div className="container">
