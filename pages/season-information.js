@@ -28,34 +28,34 @@ export default function SeasonInformation() {
                         <div className="columns is-multiline is-justify-content-center">
                             <div className="column is-5">
                                 <div className="rally">
-                                    <h3 className="rally-title">RallyDiaries eRally Championship S4 Round 1</h3>
-                                    <p className="rally-date">16 - 22 October 2024</p>
+                                    <h3 className="rally-title">RallyDiaries eRally Championship S5 Round 1</h3>
+                                    <p className="rally-date">20 - 23 June 2024</p>
                                 </div>
                             </div>
                             <div className="column is-5">
                                 <div className="rally">
-                                    <h3 className="rally-title">RallyDiaries eRally Championship S4 Round 2</h3>
-                                    <p className="rally-date">30 - 05 November 2024</p>
+                                    <h3 className="rally-title">RallyDiaries eRally Championship S5 Round 2</h3>
+                                    <p className="rally-date">04 - 07 July 2024</p>
                                 </div>
                             </div>
                             <div className="column is-5">
                                 <div className="rally">
-                                    <h3 className="rally-title">RallyDiaries eRally Championship S4 Round 3</h3>
-                                    <p className="rally-date">13 - 19 November 2024</p>
+                                    <h3 className="rally-title">RallyDiaries eRally Championship S5 Round 3</h3>
+                                    <p className="rally-date">18 - 21 July 2024</p>
+                                </div>
+                            </div>
+                            {/* <div className="column is-5">
+                                <div className="rally">
+                                    <h3 className="rally-title">RallyDiaries eRally Championship S5 Round 4</h3>
+                                    <p className="rally-date">01 - 04 August 2024</p>
                                 </div>
                             </div>
                             <div className="column is-5">
                                 <div className="rally">
-                                    <h3 className="rally-title">RallyDiaries eRally Championship S2 Round 4</h3>
-                                    <p className="rally-date">27 - 03 December 2024</p>
-                                </div>
-                            </div>
-                            <div className="column is-5">
-                                <div className="rally">
-                                    <h3 className="rally-title">RallyDiaries eRally Championship S4 Round 5</h3>
+                                    <h3 className="rally-title">RallyDiaries eRally Championship S5 Round 5</h3>
                                     <p className="rally-date">11 - 17 December 2024</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </section>
