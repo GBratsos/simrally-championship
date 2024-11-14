@@ -21,4 +21,3 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
-//188.34.179.168
