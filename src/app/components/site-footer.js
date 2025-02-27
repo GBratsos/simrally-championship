@@ -7,7 +7,6 @@ import {
   faDiscord,
   faTwitch,
   faTwitter,
-  faViber,
   faTiktok,
 } from '@fortawesome/free-brands-svg-icons'
 
